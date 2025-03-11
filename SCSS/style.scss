@@ -198,24 +198,27 @@ body {
 .box{
     padding: 40px 0px;
     background-color:gainsboro;
-    .content{
+    .container{
      display: grid;
      grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+     
+     
      .block{
          padding: 20px;
          text-align: center;
          i{
              color: #10cab7;
-             font-size: 30px;
+             font-size: 55px;
              margin-bottom: 10px;
          }
          h3{
              font-weight: bolder;
-             font-size: 14px;
+             font-size: 20px;
              line-height: 1.5;
          }
          p{
-             font-size: 11px;
+             font-size: 16px;
+             color: #9c9999;
              line-height: 1.5;
              
          }

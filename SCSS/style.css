@@ -176,26 +176,27 @@ body {
   padding: 40px 0px;
   background-color: gainsboro;
 }
-.box .content {
+.box .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
-.box .content .block {
+.box .container .block {
   padding: 20px;
   text-align: center;
 }
-.box .content .block i {
+.box .container .block i {
   color: #10cab7;
-  font-size: 30px;
+  font-size: 55px;
   margin-bottom: 10px;
 }
-.box .content .block h3 {
+.box .container .block h3 {
   font-weight: bolder;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 1.5;
 }
-.box .content .block p {
-  font-size: 11px;
+.box .container .block p {
+  font-size: 16px;
+  color: #9c9999;
   line-height: 1.5;
 }
 
