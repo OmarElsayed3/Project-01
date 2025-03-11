@@ -1,0 +1,160 @@
+/*  Start Global Style Section */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  /* Small  */
+  /* Medium */
+  /* Large */
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1150px;
+  }
+}
+
+/*  End Global Style Section */
+/*   Start Style Section one */
+/* Start Header */
+.header {
+  padding: 15px;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
+.header .logo {
+  width: 60px;
+}
+.header .list {
+  position: relative;
+}
+.header .list .icon {
+  width: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.header .list .icon span {
+  background-color: #444242;
+  margin-bottom: 5px;
+  height: 2px;
+}
+.header .list .icon span:first-child {
+  width: 100%;
+}
+.header .list .icon span:nth-child(2) {
+  width: 50%;
+  transition: 0.5s;
+}
+.header .list .icon span:last-child {
+  width: 100%;
+}
+.header .list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #ece9e9;
+  position: absolute;
+  right: 0;
+  min-width: 200px;
+  top: calc(100% + 15px);
+  display: none;
+  z-index: 1;
+}
+.header .list ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #333;
+  transition: 0.5s;
+}
+.header .list ul::before {
+  content: "";
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #f6f6f6 transparent;
+  position: absolute;
+  right: 5px;
+  top: -20px;
+}
+.header .list:hover .icon span:nth-child(2) {
+  width: 100%;
+}
+.header .list:hover ul {
+  display: block;
+}
+.header .list:hover ul li a:hover {
+  padding-left: 25px;
+}
+
+/* End Header */
+/* Start Section */
+.Section-One {
+  background-image: url("../Media/landing.jpg");
+  background-size: cover;
+  position: relative;
+  height: calc(100vh - 64px);
+}
+.Section-One .intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 350px;
+  max-width: 100%;
+}
+.Section-One .intro h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 50px;
+  color: #10cab7;
+}
+.Section-One .intro p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+@media (max-width: 767px) {
+  .Section-One .intro h1 {
+    font-size: 60px;
+    margin-bottom: -35px;
+  }
+  .Section-One .intro h1 p {
+    font-size: 15px;
+  }
+}
+
+/* End Section */
+/*   End Style Section one */
+/*   Start Style Section two */
+/*   End Style Section two */
+/*   Start Style Section three */
+/*   End Style Section three */
+/*   Start Style Section four */
+/*   End Style Section four */
+/*   Start Style Section five */
+/*   End Style Section five */
+/*   Start Style Section six*/
+/*   End Style Section six *//*# sourceMappingURL=style.css.map */
