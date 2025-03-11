@@ -276,9 +276,7 @@ body {
                 width: 260px;
             }
             @include max-width(991px){
-                .image-coloumn{
-                    display: none;
-                }
+                display: none;
             }
             
         }
