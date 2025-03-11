@@ -363,5 +363,113 @@ body {
 /*   End Style Section five */
 
 /*   Start Style Section six*/
+.contact
+{
+    padding: 20px 0px;
+    height: 480px;
+    background-color: #f6f6f6;
+    .container
+    {
+        text-align: center;
+        margin-top: -20px;
+        .h1
+        {
+            color:#ebeced;
+            font-size: 90px;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: -55px;
+            + p
+            {
+                color: #858585;
+                font-size: 20px;
+                text-align: center;
+            }
+        }
+        @include max-width(767px)
+        {
+            .h1
+            {
+                font-size: 60px;
+                margin-bottom: -35px;
+                + p
+                {
+                    font-size: 15px;
+                }
+            }
+        }
+        .links
+        {
+            margin-top: 90px;
+            p
+            {
+                color: #2c4755;
+                font-size: 35px;
+                font-weight: 800;
+                word-spacing: -2px;
+                letter-spacing: -2px;
+                margin-bottom: 6px;
+            }
+            a
+            {
+                color: #10cab7;
+                font-size: 33px;
+                font-weight: 800;
+                text-decoration: none;
+            }
+            .icons
+            {
+                margin-top: 15px;
+                word-spacing: 0px;
+                i
+                {
+                    padding: 0px 3px;
+                    color: #2c4755;
+                }
+            }
+            /* Meduim Screens */
+            @include max-width(991px)
+            {
+                p
+                {
+                    font-size: 32px;
+                }
+                a
+                {
+                    font-size: 30px;
+                }
+            }
+            /* Small Screens */
+            @include max-width(767px)
+            {
+                p
+                {
+                    font-size: 25px;
+                }
+                a
+                {
+                    font-size: 23px;
+                }
+                .icons
+                {
+                    font-size: small;
+                }
+            }
+        }
+    }
+}
 
+footer
+{
+    text-align: center;
+    padding: 30px;
+    background-color: #2c4755;
+    color: white;
+    font-size: 17px;
+    span
+    {
+        color: #10cab7;
+        font-weight: bold;
+    }
+}
 /*   End Style Section six */
