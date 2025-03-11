@@ -173,6 +173,33 @@ body {
 /*   End Style Section one */
 
 /*   Start Style Section two */
+.box{
+    padding: 40px 0px;
+    background-color:gainsboro;
+    .content{
+     display: grid;
+     grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+     .block{
+         padding: 20px;
+         text-align: center;
+         i{
+             color: #10cab7;
+             font-size: 30px;
+             margin-bottom: 10px;
+         }
+         h3{
+             font-weight: bolder;
+             font-size: 14px;
+             line-height: 1.5;
+         }
+         p{
+             font-size: 11px;
+             line-height: 1.5;
+             
+         }
+     }
+    }
+ }
 
 /*   End Style Section two */
 
