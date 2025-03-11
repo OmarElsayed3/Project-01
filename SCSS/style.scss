@@ -185,7 +185,181 @@ body {
 /*   End Style Section four */
 
 /*   Start Style Section five */
+.about
+{
+    padding: 20px;
+    margin-bottom: 100px;
+    .container
+    {
+        .h1
+        {
+            color:#ebeced;
+            font-size: 90px;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: -55px;
+            + p
+            {
+                color: #858585;
+                font-size: 20px;
+                text-align: center;
+            }
+        }
+        @include max-width(767px)
+        {
+            .h1
+            {
+                font-size: 60px;
+                margin-bottom: -35px;
+                + p
+                {
+                    font-size: 15px;
+                }
+            }
+        }
+        .text-parent
+        {
+            margin-top: 100px;
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-areas: "div-image div-text";
+            justify-content: space-between;
+            align-content: center;
+            gap: 250px;
+            .image
+            {
+                width: 230px;
+                height: 345px;
+                grid-area: div-image;
+                position: relative;
+                img
+                {
+                    width: 100%;
+                }
+                &::after
+                {
+                    content: "";
+                    background-color: #dcdcdc;
+                    width: 100px;
+                    height: calc(100% + 80px);
+                    position: absolute;
+                    top: -40px;
+                    left: -20px;
+                    z-index: -1;
+                }
+                &::before
+                {
+                    content: "";
+                    width: 120px;
+                    height: 80%;
+                    border-left: 80px solid #10cab7;
+                    border-bottom: 80px solid #10cab7;
+                    position: absolute;
+                    top: -40px;
+                    right: -140px;
+                    z-index: -1;
+                }
+            }
+            .text
+            {
+                grid-area: div-text;
+                margin-top: -20px;
+                .child-1
+                {
+                    font-weight: bold;
+                    font-size: 17px;
+                    line-height: 2;
+                    margin-bottom: 50px;
+                    position: relative;
+                    &::after
+                    {
+                        content: "";
+                        background-color: #10cab7;
+                        width: 300px;
+                        height: 2px;
+                        position: absolute;
+                        left: 0px;
+                        bottom: -55px;
+                    }
+                }
+                .child-2
+                {
+                    color: #777;
+                    font-size: 17px;
+                    line-height: 2;
+                    padding-top: 30px;
+                }
+            }
+            /* Meduim Screens */
+            @include max-width(991px)
+            {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-content: center;
+                width: 90%;
+                margin: auto;
+                margin-top: 70px;
+                .image
+                {
+                    width: 190px;
+                    height: 300px;
+                    &::after , &::before
+                    {
+                        display: none;
+                    }
+                    margin-bottom: -200px;
+                }
 
+                .text
+                {
+                    text-align: center;
+                    .child-1
+                    {
+                        font-size: 16px;
+                        &::after
+                        {
+                            content: "";
+                            background-color: #10cab7;
+                            width: 50%;
+                            height: 2px;
+                            position: absolute;
+                            left: 25%;
+                            bottom: -55px;
+                        }
+                    }
+                    .child-2
+                    {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            /* Small screens */
+            @include max-width(767px)
+            {
+                .image
+                {
+                    width: 170px;
+                    height: 280px;
+                    margin-bottom: -220px;
+                }
+
+                .text
+                {
+                    .child-1
+                    {
+                        font-size: 14px;
+                    }
+                    .child-2
+                    {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
 /*   End Style Section five */
 
 /*   Start Style Section six*/
