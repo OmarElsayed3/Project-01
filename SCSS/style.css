@@ -149,6 +149,33 @@ body {
 /* End Section */
 /*   End Style Section one */
 /*   Start Style Section two */
+.box {
+  padding: 40px 0px;
+  background-color: gainsboro;
+}
+.box .content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.box .content .block {
+  padding: 20px;
+  text-align: center;
+}
+.box .content .block i {
+  color: gainsboro;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.box .content .block h3 {
+  font-weight: bolder;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.box .content .block p {
+  font-size: 11px;
+  line-height: 1.5;
+}
+
 /*   End Style Section two */
 /*   Start Style Section three */
 /*   End Style Section three */
